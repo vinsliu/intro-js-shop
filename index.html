@@ -4,8 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boutique</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <h1>Boutique</h1>
+    </header>
+    <div id="container">
+      <aside id="sideBar">
+        <h2>Catégories</h2>
+        <div id="categories">
+          <h3>Recherche</h3>
+          <input type="text" id="search" />
+          <h3>Prix</h3>
+          <input type="text" id="price" />
+        </div>
+      </aside>
+      <section id="productsList"></section>
+    </div>
+    <section id="pagination"></section>
     <script src="script.js"></script>
   </body>
 </html>

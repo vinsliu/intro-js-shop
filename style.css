@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: cadetblue;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 20rem 84rem;
+  grid-gap: 2rem;
+  justify-content: center;
+}
+
+#sideBar {
+  border: 2px solid cadetblue;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+#productsList {
+  display: grid;
+  grid-template-columns: repeat(4, 20rem);
+  justify-content: center;
+  gap: 1rem;
+}
+
+#productsList img {
+  object-fit: cover;
+  width: 20rem;
+  height: 20rem;
+  border: 2px solid cadetblue;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+h2 {
+  text-align: center;
+  text-transform: capitalize;
+}

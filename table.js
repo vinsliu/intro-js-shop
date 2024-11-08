@@ -99,7 +99,7 @@ function tableDisplay(products) {
     let row = document.createElement("tr");
     row.innerHTML += `
     <td>${product.titre}</td>
-    <td><img src='${product.image}' alt='${product.alt}' width='20rem' height='20rem'/></td>
+    <td><img src='${product.image}' alt='${product.alt}' width='100' height='100'/></td>
     <td>${product.prix}€</td>
     <td>${product.categorie}</td>
     <td>${product.attributs.join(", ")}</td>

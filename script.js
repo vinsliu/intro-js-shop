@@ -125,11 +125,21 @@ function categoryDisplay(products) {
   let categories = [...new Set(products.map((product) => product.categorie))];
   categoriesList.innerHTML = "";
   // Ajout de l'élément pour afficher toutes les catégories
-  categoriesList.innerHTML += `<li class='category-link category-link-main active' onClick="clearFilter()">Tout afficher</li>`;
+  categoriesList.innerHTML += `<li class='category-link-main active'>Tout afficher</li>`;
   // Boucle pour afficher toutes les catégories
   for (let category of categories) {
-    categoriesList.innerHTML += `<li class='category-link' onClick="categoryFilter('${category}')">${category}</li>`;
+    categoriesList.innerHTML += `<li class='category-link'>${category}</li>`;
   }
+  // Récupère l'élément li Tout afficher
+  let categoryAll = document.querySelector(".category-link-main");
+  categoryAll.addEventListener("click", clearFilter);
+  // Récupère les éléments li catégories
+  let categoryLink = document.querySelectorAll(".category-link");
+  categoryLink.forEach((link) =>
+    link.addEventListener("click", function () {
+      categoryFilter(link.textContent);
+    })
+  );
 }
 
 // Fonction pour appliquer le filtre des catégories
@@ -142,6 +152,8 @@ function categoryFilter(category) {
   document.querySelectorAll(".category-link").forEach((link) => {
     link.classList.remove("active");
   });
+  // Supprime la class .active du lien Tout afficher
+  document.querySelector(".category-link-main").classList.remove("active");
   // Ajoute la class .active à la catégorie sélectionnée
   event.target.classList.add("active");
   // Affiche les produits de la catégorie

@@ -1,38 +1,38 @@
-<!--
-! Une fois l'exercice finis, faire une archive et me l'envoyer en mp sur discord
+Une fois l'exercice finis, faire une archive et me l'envoyer en mp sur discord
 
 Faire une page web type catalogue produit
 
 récupérer des images pour les produits
 
 créer une tableau contenant un ensemble de produit (array ou object) avec les informations suivantes : titre, image, alt de l'image, prix, catégorie, mots clés (attributs du produit), note (utilisateur)[{
-          titre: 'titre produit 1',
-          image: 'image1.jpg',
-          alt: 'alt image1'
-          prix: 10,
-          categorie: 'tshirt',
-          attributs: ['attr1', 'attr2', ...],
-          note: 4
-      },{
-          titre: 'titre produit 2',
-          image: 'image2.jpg',
-          alt: 'alt image2'
-          prix: 14,
-          categorie: 'chemise',
-          attributs: ['attr1', 'attr2', ...],
-          note: 3.5
-      },...]
+titre: 'titre produit 1',
+image: 'image1.jpg',
+alt: 'alt image1'
+prix: 10,
+categorie: 'tshirt',
+attributs: ['attr1', 'attr2', ...],
+note: 4
+},{
+titre: 'titre produit 2',
+image: 'image2.jpg',
+alt: 'alt image2'
+prix: 14,
+categorie: 'chemise',
+attributs: ['attr1', 'attr2', ...],
+note: 3.5
+},...]
 
 Sur la page catalogue faire une barre latérale listant toutes les catégories sous forme de lien (selon les catégories présentent dans le tableau des produits via une boucle)
-  mettre également un input type text en dessous des catégories : pour la recherche
-  mettre également un input type text en dessous : pour filtrer par prix
+
+- Mettre également un input type text en dessous des catégories : pour la recherche
+- Mettre également un input type text en dessous : pour filtrer par prix
 
 Puis un bloc principal listant tous les produits dans un bloc html en affichant les informations du produit
-  la catégorie et les attributs du produit doivent être des liens
+la catégorie et les attributs du produit doivent être des liens
 
 rajouter aussi dans les catégories un lien voir tous les produits
 
------
+---
 
 Pour les évènement :
 lors du click sur une catégorie de la barre latérale ou d'un bloc produit, il faut changer l'affichage des produits afin de n'afficher que ceux de cette catégorie.
@@ -41,9 +41,16 @@ lors d'une saisie dans l'input de recherche, à partir de 3 caractères, filtrer
 lors d'une saisie dans l'input de recherche par prix, si la valeur est bien un chiffre, il faut afficher les produits dont le prix est inférieur à la saisie utilisateur.
 
 Pour aller plus loin :
-créer + de 9 produits dans le tableau
-Afficher 9 produits par défaut
-mettre des liens en bas de page pour la pagination, autant de lien qu'il y a de produits à afficher (9 par page)
-lors du click sur un lien de la pagination changer l'affichage des produits
-Lors des recherche ou des filtres par catégorie, recherche ou prix faire également une pagination si le nombre de produit dépasse 9
--->
+
+- Créer + de 9 produits dans le tableau
+- Afficher 9 produits par défaut
+- Mettre des liens en bas de page pour la pagination, autant de lien qu'il y a de produits à afficher (9 par page)
+- Lors du click sur un lien de la pagination changer l'affichage des produits
+- Lors des recherche ou des filtres par catégorie, recherche ou prix faire également une pagination si le nombre de produit dépasse 9
+
+Pour aller plus loin :
+
+- Faire une nouvelle page pour afficher les produits dans un tableau html
+- Au click sur une cellule faire en sorte que la valeur de la cellule soit sélectionnée.
+- Permettre de se déplacer dans le tableau avec les flèches (lors d'un déplacement, la valeur de la cellule suivante doit être sélectionnée)
+- Au double click sur une cellule, transformer son contenu pour avoir un input ou un select (categorie) afficher dans les inputs la valeur de la cellule si l'utilisateur change la valeur, récupérer la valeur, enlever l'input et mettre la nouvelle valeur dans la cellule

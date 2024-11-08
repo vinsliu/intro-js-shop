@@ -54,6 +54,42 @@ const productData = [
     attributs: ["compacte", "polyvalente", "berline"],
     note: 4.3,
   },
+  {
+    titre: "Ours",
+    image: "img/peluche1.jpg",
+    alt: "Image d'un ours en peluche",
+    prix: 29.99,
+    categorie: "peluche",
+    attributs: ["mignon", "doux", "enfant"],
+    note: 4.7,
+  },
+  {
+    titre: "Agneau",
+    image: "img/peluche2.jpg",
+    alt: "Image d'un agneau en peluche",
+    prix: 25.99,
+    categorie: "peluche",
+    attributs: ["mignon", "doux", "enfant"],
+    note: 4.3,
+  },
+  {
+    titre: "Vélo de ville",
+    image: "img/velo1.jpg",
+    alt: "Image d'un vélo de ville",
+    prix: 225.99,
+    categorie: "vélo",
+    attributs: ["sport", "velo", "ville"],
+    note: 4.6,
+  },
+  {
+    titre: "Vélo de marathon",
+    image: "img/velo2.jpg",
+    alt: "Image d'un vélo de marathon classique",
+    prix: 325.99,
+    categorie: "vélo",
+    attributs: ["sport", "velo", "marathon"],
+    note: 4.4,
+  },
 ];
 
 // Fonction pour afficher les produits

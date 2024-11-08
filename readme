@@ -31,7 +31,7 @@ La catégorie et les attributs du produit doivent être des liens
 
 rajouter aussi dans les catégories un lien voir tous les produits
 
----
+-----
 
 Pour les évènement :
 lors du click sur une catégorie de la barre latérale ou d'un bloc produit, il faut changer l'affichage des produits afin de n'afficher que ceux de cette catégorie.

@@ -29,6 +29,30 @@ h1 {
   padding: 1rem;
 }
 
+#categories {
+  margin: 0.5rem 1rem 1rem;
+}
+.category-link {
+  list-style: none;
+  text-transform: capitalize;
+  margin-bottom: 0.2rem;
+  cursor: pointer;
+}
+.category-link:hover {
+  text-decoration: underline;
+  color: cadetblue;
+}
+.category-link.active {
+  color: cadetblue;
+  text-decoration: underline;
+}
+#searchCat {
+  margin-bottom: 1rem;
+}
+#searchPrx {
+  margin-bottom: 1rem;
+}
+
 #productsList {
   display: grid;
   grid-template-columns: repeat(4, 20rem);
@@ -36,16 +60,53 @@ h1 {
   gap: 1rem;
 }
 
-#productsList img {
-  object-fit: cover;
-  width: 20rem;
-  height: 20rem;
+.product {
   border: 2px solid cadetblue;
   border-radius: 5px;
   padding: 1rem;
 }
 
-h2 {
+.product img {
+  object-fit: cover;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 5px;
+}
+
+.product h2 {
   text-align: center;
   text-transform: capitalize;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.product h2:hover {
+  text-decoration: underline;
+  color: cadetblue;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+}
+.product-cat {
+  display: flex;
+  justify-content: flex-start;
+}
+.product-cat a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #000;
+}
+.product-cat a:hover {
+  color: cadetblue;
+  text-decoration: underline;
+}
+.product-att a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #000;
+}
+.product-att a:hover {
+  color: cadetblue;
+  text-decoration: underline;
 }

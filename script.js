@@ -132,9 +132,11 @@ function categoryDisplay(products) {
   }
   // Récupère l'élément li Tout afficher
   let categoryAll = document.querySelector(".category-link-main");
+  // Évènement pour effacer le filtre
   categoryAll.addEventListener("click", clearFilter);
   // Récupère les éléments li catégories
   let categoryLink = document.querySelectorAll(".category-link");
+  // Évènements pour chaque liens categorie
   categoryLink.forEach((link) =>
     link.addEventListener("click", function () {
       categoryFilter(link.textContent);
@@ -171,6 +173,12 @@ function clearFilter() {
   // Affiche tous les produits
   productDisplay(productData);
 }
+
+// Input recherche catégorie
+let inputSearchCat = document.getElementById("searchCat");
+
+// Input recherche prix
+let inputSearchPrx = document.getElementById("searchPrx");
 
 // Appel des fonctions
 productDisplay(productData);
